@@ -1,0 +1,28 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "css": [ "css/style.css" ],
+      "js": [ "beautify-fetchword.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "default_locale": "zh_CN",
+   "description": "__MSG_app_description__",
+   "homepage_url": "http://www.iciba.com/",
+   "icons": {
+      "128": "icon-128.png",
+      "48": "icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlwO7dwelB5bCJqYYeUDqSkGMN6asitJXxYvxh1Rb6oEEVBU62AW54sJPxbvCb3hSdo98adqULOW63NpqlxMLz6KcOyVdvgZhSHIe7GAALXIFSEIky7C21iHXqbJq61+z8nM59bwMcsHjo6yDdnIr7IHXOCu65qpoZUH/etq1BySfJPMAyNM3zUFvzzOOWaPj6GuLfLYmeyfR/MhAhXgut/wK2y4HoWyhPrXW55NAGbNzT18w6QvGelIdG8CPaeTGtMUkd76AipsoIsaZM6MwF3DwnIEtunliLiLynH9WoLSrEGp5lbgY+64hH9c1/12lq4ipXVkUVq724pu3t+maJwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_app_name__",
+   "permissions": [ "http://*/*", "https://*/*", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.3.6",
+   "web_accessible_resources": [ "images/loading.gif", "images/words_tool.png", "images/dotwnd_bk.gif" ]
+}

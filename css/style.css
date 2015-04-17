@@ -1,0 +1,253 @@
+body, h1.ICIBA_normal, h2.ICIBA_normal, h3.ICIBA_normal, h4.ICIBA_normal, h5.ICIBA_normal, h6.ICIBA_normal, p.ICIBA_normal, dl.ICIBA_normal, dd.ICIBA_normal, ol.ICIBA_normal, ul.ICIBA_normal, th.ICIBA_normal, td.ICIBA_normal, form.ICIBA_normal, fieldset.ICIBA_normal, legend.ICIBA_normal, input.ICIBA_normal, button.ICIBA_normal, textarea.ICIBA_normal {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset, img {
+    border: 0;
+}
+
+legend {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+em {
+    font-style: normal
+}
+
+.iciba_fl {
+    float: left;
+}
+
+.iciba_fr {
+    float: right;
+}
+
+.iciba_clear {
+    zoom: 1;
+}
+
+.iciba_clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#iciba_words-tool {
+    width: 276px;
+    font-size: 12px;
+}
+
+.iciba-yibtn {
+    width: 22px;
+    height: 22px;
+    overflow: hidden;
+    position: absolute;
+    background: url(' + chrome.extension.getURL(' images/dotwnd_bk.gif ') + ') no-repeat 0 0;
+    cursor: pointer;
+}
+
+#iciba_words-tool .iciba_top {
+    padding-bottom: 3px;
+    visibility: hidden;
+}
+
+#iciba_words-tool .iciba_top:hover {
+    visibility: visible;
+}
+
+#iciba_words-tool .iciba_top ul li {
+    float: right;
+    width: 25px;
+    height: 19px;
+    cursor: pointer;
+    background-image: url(' + chrome.extension.getURL(' images/words_tool.png ') + ');
+    background-repeat: no-repeat; /*list-style:none;*/
+}
+
+#iciba_words-tool .iciba_top ul li.iciba_close_btn {
+    width: 28px;
+    background-position: 0 0; /*list-style:none;*/
+}
+
+#iciba_words-tool .iciba_top ul li.iciba_fixed_btn {
+    background-position: 0 -20px;
+    list-style: none;
+}
+
+#iciba_words-tool .iciba_top ul li.iciba_search_btn {
+    background-position: -25px -40px;
+    list-style: none;
+}
+
+#iciba_words-tool .iciba_top ul li.iciba_query_btn {
+    background-position: 0 -60px;
+    list-style: none;
+}
+
+#iciba_words-tool .iciba_cont {
+    border: 1px solid #87B3E5;
+    background-color: #FFFFFF;
+}
+
+#iciba_words-tool .iciba_search_bar {
+    display: none;
+}
+
+#iciba_words-tool .iciba_search_bar input {
+    width: 264px;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 5px;
+    border: none;
+    border-bottom: 1px solid #87B3E5;
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+    padding: 0
+}
+
+#iciba_words-tool .iciba_loading {
+    background-color: #FFFFFF;
+    height: 150px;
+    width: 100%;
+}
+
+#iciba_words-tool .iciba_words {
+    padding: 14px 12px 0;
+    line-height: 24px;
+}
+
+#iciba_words-tool .iciba_words p {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+#iciba_words-tool .iciba_words a {
+    float: right;
+    color: #236FD4;
+}
+
+#iciba_words-tool .iciba_sound {
+    padding: 0 12px 10px;
+    line-height: 18px;
+}
+
+#iciba_words-tool .iciba_sound p {
+    float: left;
+    padding-right: 4px;
+}
+
+#iciba_words-tool .iciba_sound p span {
+    padding-right: 4px;
+    color: #999;
+    vertical-align: middle;
+}
+
+#iciba_words-tool .iciba_sound p a {
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+    vertical-align: middle;
+    background: url(' + chrome.extension.getURL(' images/words_tool.png ') +') no-repeat - 26 px - 60 px;
+}
+
+#iciba_words-tool .iciba_sound p a:hover {
+    background-position: -42px -60px;
+}
+
+#iciba_words-tool .iciba_result, #iciba_words-tool .iciba_net_explain, #iciba_words-tool .ICIBA_normalju_use, #iciba_words-tool .iciba_baike {
+    width: 250px;
+    margin: 0 12px;
+    padding-bottom: 6px;
+    line-height: 20px;
+    border-top: 1px solid #C8C8C8;
+}
+
+#iciba_words-tool .iciba_result li {
+    padding-top: 6px;
+    line-height: 20px;
+    overflow: hidden;
+    zoom: 1;
+    list-style: none;
+}
+
+#iciba_words-tool .iciba_result li p.iciba_lf {
+    float: left;
+    padding-right: 10px;
+}
+
+#iciba_words-tool .iciba_result li p.iciba_rg {
+    float: left;
+    width: 80%;
+}
+
+#iciba_words-tool .iciba_result li a {
+    color: #236FD4;
+    text-decoration: underline;
+}
+
+#iciba_words-tool .iciba_net_explain .iciba_tt, #iciba_words-tool .ICIBA_normalju_use .iciba_tt, #iciba_words-tool .iciba_baike .iciba_tt {
+    padding: 6px 0;
+}
+
+#iciba_words-tool .iciba_net_explain .iciba_tt h6, #iciba_words-tool .ICIBA_normalju_use .iciba_tt h6, #iciba_words-tool .iciba_baike .iciba_tt h6 {
+    float: left;
+    padding-left: 8px;
+    font-size: 12px;
+    font-weight: normal;
+    border-left: 2px solid #236FD4;
+}
+
+#iciba_words-tool .iciba_net_explain .iciba_tt a, #iciba_words-tool .ICIBA_normalju_use .iciba_tt a, #iciba_words-tool .iciba_baike .iciba_tt a {
+    float: right;
+    color: #236FD4;
+}
+
+#iciba_words-tool .iciba_net_explain p {
+    padding-left: 10px;
+    color: #666;
+}
+
+#iciba_words-tool .ICIBA_normalju_use .iciba_l_u_E {
+    padding-left: 10px;
+    color: #666;
+}
+
+#iciba_words-tool .ICIBA_normalju_use .iciba_l_u_C {
+    padding-left: 10px;
+    color: #666;
+}
+
+#iciba_words-tool .ICIBA_normalju_use .iciba_l_u_from {
+    padding-top: 4px;
+    text-align: right;
+    color: #999;
+}
+
+#iciba_words-tool .iciba_baike p.iciba_b_txt {
+    padding-left: 10px;
+    color: #666;
+}
+
+/* S huayi */
+#iciba_words-tool .iciba_huayi {
+    padding-top: 6px;
+    border: none;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/* E huayi */

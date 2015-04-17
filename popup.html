@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body,h1,p,form,fieldset,legend,input{margin:0;padding:0;}
+fieldset{border:0;}
+.main{position:relative;width:150px;font-size:12px;font-family:\5FAE\8F6F\96C5\9ED1;}
+.main .head{padding-left:16px;margin:0 5px;line-height:26px;font-size:12px;border-bottom:1px solid #9fc1ea;background:url(images/popup_logo.png) no-repeat 0 50%;}
+.main .content{padding:0 10px 10px;}
+.main .content legend{line-height:24px;}
+.main .content p{line-height:20px;}
+.main .content p.dis{color:#999;}
+.main .content input,.main .content label{vertical-align:middle;}
+.main .content .getWord{padding-bottom:10px;}
+</style>
+</head>
+<body>
+<div class="main">
+    <h1 class="head">金山词霸</h1>
+    <form class="content">
+        <fieldset>
+            <legend>取词设置</legend>
+            <div class="getWord">
+                <p>
+                    <input id="switchfetchword" type="checkbox"></input>
+                    <label for="switchfetchword">开启取词:</label>
+                </p>
+                <p class="dis">
+                    <input id="mourse" type="radio" name="quci"></input>
+                    <label for="mourse">鼠标悬停取词</label>
+                </p>
+                <p class="dis">
+                    <input id="ctrlkey" type="radio" name="quci"></input>
+                    <lable for="ctrlkey">ctrl+鼠标取词</lable>
+                </p>
+                <p class="dis">
+                    <input id="shiftkey" type="radio" name="quci"></input>
+                    <lable for="shiftkey">shift+鼠标取词</lable>
+                </p>
+            </div>
+            <!--div class="huayi">
+                <p>
+                    <input id="switchHUAYI" type="checkbox"></input>
+                    <label for="switchHUAYI">开启划译:</label>
+                </p>
+                <p class="dis">
+                    <input id="hideplane" type="radio" name="huayi"></input>
+                    <label for="hideplane">先显示翻译按钮</label>
+                </p>
+                <p class="dis">
+                    <input id="showplane" type="radio" name="huayi"></input>
+                    <lable for="showplane">直接出翻译结果</lable>
+                </p>
+            </div-->
+        </fieldset>
+    </form>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
