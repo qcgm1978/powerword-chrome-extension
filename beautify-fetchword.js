@@ -137,7 +137,7 @@
                     function setOffset(data) {
                         var height = quiha.container.clientHeight;
                         quiha.container.style.left = data.pageX + 10 + "px";
-                        var curTopVal = data.pageY + 5;
+                        var curTopVal = data.pageY + 15;
                         var windowBottomTop = window.scrollY + window.innerHeight;
                         if (curTopVal + height > windowBottomTop) {
                             curTopVal = windowBottomTop - height
@@ -227,7 +227,18 @@
     }
 
     function fedig() {
-        quiha.container && (quiha.container.innerHTML = "", clearTimeout(quiha.timer), quiha.canMove = !0);
+        function clearPopup() {
+            if (quiha.container.innerHTML !== '') {
+                setTimeout(function (data) {
+                        quiha.container.innerHTML = "";
+                        clearTimeout(quiha.timer);
+                    },
+                    2000
+                );
+            }
+        }
+
+        quiha.container && (clearPopup(), quiha.canMove = !0);
     }
 
     function bura() {
