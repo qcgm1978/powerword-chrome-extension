@@ -229,12 +229,7 @@
     function fedig() {
         function clearPopup() {
             if (quiha.container.innerHTML !== '') {
-                setTimeout(function (data) {
-                        quiha.container.innerHTML = "";
-                        clearTimeout(quiha.timer);
-                    },
-                    2000
-                );
+                quiha.container.innerHTML = "";
             }
         }
 
