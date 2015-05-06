@@ -133,7 +133,7 @@
                 orus = JSON.parse(orus);
                 if ("object" == typeof orus && "1" == orus.errorId) quiha.container.innerHTML = ""; else if (!orus.word_name || orus.word_name.toLowerCase() === dere.toLowerCase()) {
                     quiha.container.innerHTML = codin.join("");
-                    setOffset(eleData)
+
                     function setOffset(data) {
                         var height = quiha.container.clientHeight;
                         quiha.container.style.left = data.pageX + 10 + "px";
@@ -152,6 +152,7 @@
                         ogooy.style.display = "none";
                         orus = tapla(orus);
                         document.getElementById("result-cont").innerHTML = orus;
+                        setOffset(eleData)
                         orus = document.getElementById("en_pron");
                         var ogooy = document.getElementById("us_pron"), trole = document.getElementById("chinese_pron");
                         if (orus) {
