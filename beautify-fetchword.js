@@ -133,16 +133,21 @@
                 orus = JSON.parse(orus);
                 if ("object" == typeof orus && "1" == orus.errorId) quiha.container.innerHTML = ""; else if (!orus.word_name || orus.word_name.toLowerCase() === dere.toLowerCase()) {
                     quiha.container.innerHTML = codin.join("");
-
                     function setOffset(data) {
                         var height = quiha.container.clientHeight;
-                        quiha.container.style.left = data.pageX + 10 + "px";
                         var curTopVal = data.pageY + 15;
+                        var curLeftVal = data.pageX + 10;
                         var windowBottomTop = window.scrollY + window.innerHeight;
                         if (curTopVal + height > windowBottomTop) {
                             curTopVal = windowBottomTop - height
                         }
+                        var innerWidth = window.innerWidth;
+                        var containerWidth = quiha.container.clientWidth;
+                        if (containerWidth + curLeftVal > innerWidth) {
+                            curLeftVal = innerWidth - containerWidth
+                        }
                         quiha.container.style.top = curTopVal + "px";
+                        quiha.container.style.left = curLeftVal + "px";
                     }
 
                     var ogooy = document.getElementById("loading");

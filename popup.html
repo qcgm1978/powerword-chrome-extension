@@ -10,7 +10,7 @@ fieldset{border:0;}
 .main .content{padding:0 10px 10px;}
 .main .content legend{line-height:24px;}
 .main .content p{line-height:20px;}
-.main .content p.dis{color:#999;}
+.main .content p.unselected {color:#999;}
 .main .content input,.main .content label{vertical-align:middle;}
 .main .content .getWord{padding-bottom:10px;}
 </style>
@@ -23,39 +23,40 @@ fieldset{border:0;}
             <legend>取词设置</legend>
             <div class="getWord">
                 <p>
-                    <input id="switchfetchword" type="checkbox"></input>
+                    <input id="switchfetchword" type="checkbox">
                     <label for="switchfetchword">开启取词:</label>
                 </p>
-                <p class="dis">
-                    <input id="mourse" type="radio" name="quci"></input>
-                    <label for="mourse">鼠标悬停取词</label>
+                <p class="unselected">
+                    <input id="shiftKey" type="radio" name="quci">
+                    <label for="shiftKey">shift+鼠标取词</label>
                 </p>
-                <p class="dis">
-                    <input id="ctrlkey" type="radio" name="quci"></input>
+                <p class="unselected">
+                    <input id="ctrlkey" type="radio" name="quci">
                     <lable for="ctrlkey">ctrl+鼠标取词</lable>
                 </p>
-                <p class="dis">
-                    <input id="shiftkey" type="radio" name="quci"></input>
-                    <lable for="shiftkey">shift+鼠标取词</lable>
+                <p class="unselected">
+                    <input id="mouse" type="radio" name="quci">
+                    <lable for="mouse">鼠标悬停取词</lable>
                 </p>
             </div>
             <!--div class="huayi">
                 <p>
-                    <input id="switchHUAYI" type="checkbox"></input>
+                    <input id="switchHUAYI" type="checkbox">
                     <label for="switchHUAYI">开启划译:</label>
                 </p>
                 <p class="dis">
-                    <input id="hideplane" type="radio" name="huayi"></input>
+                    <input id="hideplane" type="radio" name="huayi">
                     <label for="hideplane">先显示翻译按钮</label>
                 </p>
                 <p class="dis">
-                    <input id="showplane" type="radio" name="huayi"></input>
+                    <input id="showplane" type="radio" name="huayi">
                     <lable for="showplane">直接出翻译结果</lable>
                 </p>
             </div-->
         </fieldset>
     </form>
 </div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="popup.js"></script>
 </body>
 </html>
